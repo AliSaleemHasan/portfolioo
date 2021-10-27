@@ -1,0 +1,35 @@
+/* define css variables */
+:root {
+  --main-pad: 20px 30px;
+  --nav-background: rgba(11, 21, 39, 0.7);
+  --nav-icon-color: rgba(11, 21, 39, 0.9);
+  --font-family: "sans-serif";
+  --pink: #ef6c62;
+  --yellow: #f8b819;
+  --blue-sky: #0786a1;
+  --primary: #0b1527;
+  --text-gray: #a5a5a5;
+  --text-white: #fff;
+  --text-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
