@@ -7,12 +7,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   // use router to get url path and use it as animatePresence key
   const router = useRouter();
   return (
-    <Fragment>
+    <div>
       {/* header */}
       <AnimatePresence>
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>
-    </Fragment>
+    </div>
   );
 }
 export default MyApp;

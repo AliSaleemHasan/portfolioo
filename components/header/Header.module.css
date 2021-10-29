@@ -1,0 +1,13 @@
+.header {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  padding: var(--padding-x);
+  align-items: center;
+}
+
+.header__container {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
