@@ -2,6 +2,7 @@
   height: 80px;
   width: 100vw;
   display: flex;
+  justify-content: space-between;
   padding: var(--padding-x);
   align-items: center;
 }

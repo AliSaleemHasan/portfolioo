@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { animate, motion } from "framer-motion";
 import classes from "./Nav.module.css";
 const navVariants = {
   hidden: {
@@ -25,10 +26,31 @@ const listItemVariants = {
   },
 };
 
+let contactVariant = {
+  close: {
+    translateY: 0,
+    height: "25%",
+    background: "initial",
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+  open: {
+    height: "100%",
+    translateY: "-75%",
+    background: "var(--primary)",
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
 interface NavProps {
   open: boolean;
 }
 const Nav: React.FC<NavProps> = ({ open }) => {
+  const [contact, setContact] = useState(false);
   return (
     <motion.div
       variants={navVariants}
@@ -37,16 +59,20 @@ const Nav: React.FC<NavProps> = ({ open }) => {
       className={classes.nav}
     >
       <ul className={classes.nav__list}>
-        <motion.li
-          variants={listItemVariants}
-          whileHover="hover"
-          className={classes.nav__listItem}
-        >
-          Home
-        </motion.li>
-        <li className={classes.nav__listItem}>About</li>
+        <li className={classes.nav__listItem}>Home</li>
+        <li className={classes.nav__listItem}>Work</li>
         <li className={classes.nav__listItem}>Resume</li>
-        <li className={classes.nav__listItem}>Contact</li>
+        <motion.li
+          variants={contactVariant}
+          initial="close"
+          animate={contact ? "open" : "close"}
+          onClick={() => setContact(!contact)}
+          className={`${classes.nav__listItem}  ${
+            contact && classes.nav__listItemColumn
+          }`}
+        >
+          Contact
+        </motion.li>
       </ul>
     </motion.div>
   );

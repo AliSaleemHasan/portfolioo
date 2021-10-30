@@ -7,12 +7,9 @@
   height: 60px;
   z-index: 10;
   border-radius: 100%;
-  position: absolute;
-  top: var(--padding-x);
   box-shadow: 1px 1px 1px #aaa;
   background-color: var(--nav-icon-color);
-  right: var(--padding-x);
-
+  margin: var(--padding-x);
   cursor: pointer;
 }
 
