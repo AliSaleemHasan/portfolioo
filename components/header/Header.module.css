@@ -1,12 +1,11 @@
 .header {
-  height: 80px;
+  height: var(--header-height);
   width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: var(--padding-x);
   align-items: center;
 }
-
 .header__container {
   overflow: hidden;
   position: fixed;

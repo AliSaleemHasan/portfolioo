@@ -1,0 +1,13 @@
+.info {
+  height: calc(100% - var(--footer-height));
+  padding: var(--header-height) var(--padding-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info {
+    height: auto;
+  }
+}

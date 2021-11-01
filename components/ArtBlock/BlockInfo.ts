@@ -5,9 +5,9 @@ const color4 = "#0B1527";
 const color5 = "#0786A1";
 const info = [
   {
-    direction: "test",
+    direction: "horizontal",
     width: "50%",
-    height: "50vh",
+    height: "50%",
     first: {
       color: color2,
       firstStyle: {
@@ -34,7 +34,7 @@ const info = [
   {
     direction: "vertical",
     width: "50%",
-    height: "50vh",
+    height: "50%",
     first: {
       color: color3,
       firstStyle: {
@@ -59,9 +59,9 @@ const info = [
     },
   },
   {
-    direction: "test",
+    direction: "horizontal",
     width: "50%",
-    height: "50vh",
+    height: "50%",
     first: {
       color: color4,
       firstStyle: {
@@ -88,7 +88,7 @@ const info = [
   {
     direction: "vertical",
     width: "50%",
-    height: "50vh",
+    height: "50%",
     first: {
       color: color3,
       firstStyle: {

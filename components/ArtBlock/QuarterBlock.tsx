@@ -26,9 +26,6 @@ const QuarterBlock: FC<QuarterBlockProps> = ({ direction, styles }) => {
   return (
     <motion.div
       whileHover={hoverOptions(styles)}
-      transition={{
-        duration: 0.9,
-      }}
       style={{
         width: `${direction === "vertical" ? "100%" : "50%"}`,
         height: `${direction === "vertical" ? "50%" : "100%"}`,

@@ -1,6 +1,6 @@
 .nav {
-  position: relative;
-  top: -80px;
+  position: fixed;
+  top: 0;
   left: 50vw;
   width: 50vw;
   height: 100vh;
