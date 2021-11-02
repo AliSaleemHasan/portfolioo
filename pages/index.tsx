@@ -5,6 +5,10 @@ import Info from "../components/Info/Info";
 import Main from "../components/Main/Main";
 import styles from "../styles/Home.module.css";
 
+let buttonClick = (): void => {
+  console.log("test");
+};
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -16,7 +20,8 @@ const Home: NextPage = () => {
       <Main
         LeftSection={
           <Info
-            hasButton={false}
+            hasButton={true}
+            buttonText="See my Work"
             textInfo={[
               { class: "title", text: "test fear test bear" },
               { class: "subTitle", text: "test test" },

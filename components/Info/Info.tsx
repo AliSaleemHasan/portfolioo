@@ -2,9 +2,12 @@
 
 import classes from "./Info.module.css";
 import Image from "next/image";
+import Button from "../button/Button";
+import { homeButtonStyle } from "../button/buttonStyles";
 interface InfoProps {
   hasButton: boolean;
   buttonText?: string;
+  buttonClass?: string;
   hasImage: boolean;
   imageInfo?: {
     name: string;
@@ -39,6 +42,16 @@ const Info: React.FC<InfoProps> = ({
           {text.text}
         </p>
       ))}
+
+      {hasButton && buttonText && (
+        <Button
+          text={buttonText}
+          onClick={() => {
+            console.log("test");
+          }}
+          style={homeButtonStyle}
+        />
+      )}
     </div>
   );
 };
