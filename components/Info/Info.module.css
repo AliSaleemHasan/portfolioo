@@ -9,5 +9,7 @@
 @media only screen and (max-width: 1000px) {
   .info {
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
 }

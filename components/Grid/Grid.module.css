@@ -1,30 +1,32 @@
 .grid {
   width: 100%;
   height: 100%;
-  background-color: rebeccapurple;
   display: flex;
   flex-direction: co;
+  position: relative;
 }
 
-.grid__item {
+.grid__item_1,
+.grid__item_2 {
   display: flex;
   flex: 1;
 }
 
-.grid__item:nth-child(1) .item__child:nth-child(1) {
+.grid__item_1 {
   background-color: var(--pink);
 }
 
-.grid__item:nth-child(1) .item__child:nth-child(2) {
+.grid__item_1 .item__child:nth-child(2) {
   background-color: var(--primary);
 }
-.grid__item:nth-child(2) {
+
+.grid__item_2 {
+  background-color: var(--blue-sky);
+}
+.grid__item_2 .item__child:nth-child(1) {
   background-color: var(--yellow);
 }
 
 .item__child {
   flex: 1;
-}
-.item__child:nth-child(1) {
-  background-color: var(--blue-sky);
 }

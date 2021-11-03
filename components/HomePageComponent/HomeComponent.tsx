@@ -1,5 +1,6 @@
 //home component is the container for all component in / page
 
+import AboutCard from "../AboutCard/AboutCard";
 import ArtBlock from "../ArtBlock/ArtBlock";
 import Grid from "../Grid/Grid";
 import Info from "../Info/Info";
@@ -33,14 +34,30 @@ const HomeComponent: React.FC = () => {
             hasButton={true}
             buttonText="See my Work"
             textInfo={[
-              { class: "title1", text: "test1 fear test1 bear" },
-              { class: "subTitle1", text: "test1 test1" },
-              { class: "paragraph", text: "testtttttttttttttt11111111111111" },
+              {
+                class: "subTitle",
+                text: "Are you still wasting time finding good web developers!",
+              },
+              {
+                class: "paragraph",
+                text: "A good web developer is someone who is thirsty for new knowladge,seeker for improvments and has willingness to fix errors whethers with team or by himself",
+              },
+              { class: "subTitle", text: "if yes .. Here comes my turn." },
+              {
+                class: "paragraph",
+                text: "With more than 2 years of expreince in web development,Passionate about making websites ,Interacting with it and decover new web hacks ",
+              },
             ]}
             hasImage={false}
           />
         }
-        RightSection={<Grid direction="column-reverse" quadContainer />}
+        RightSection={
+          <Grid
+            direction="column-reverse"
+            quadContainer
+            Child={<AboutCard />}
+          />
+        }
       />
     </div>
   );

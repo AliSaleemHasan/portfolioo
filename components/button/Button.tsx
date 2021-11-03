@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 let buttonVariants = {
-  hover: {},
+  hover: {
+    scale: 1.05,
+  },
 };
 
 interface ButtonProps {

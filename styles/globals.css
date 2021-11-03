@@ -9,6 +9,7 @@
   --yellow: #f8b819;
   --blue-sky: #0786a1;
   --primary: #0b1527;
+  --of-white: #f2e9d8;
   --text-gray: #a5a5a5;
   --text-white: #fff;
   --text-black: #000;
@@ -45,14 +46,14 @@ a {
 
 .subTitle {
   font-family: var(--font-family);
-  font-size: clamp(25px, 5vw, 45px);
+  font-size: clamp(20px, 5vw, 40px);
 
   margin: 10px 0;
 }
 .paragraph {
-  font-size: clamp(14px, 3vw, 25px);
+  font-size: clamp(14px, 3vw, 20px);
   font-weight: normal;
-  line-height: 33px;
+  line-height: 30px;
   margin: 5px 0;
 }
 
