@@ -1,6 +1,7 @@
 //home component is the container for all component in / page
 
 import ArtBlock from "../ArtBlock/ArtBlock";
+import Grid from "../Grid/Grid";
 import Info from "../Info/Info";
 import Main from "../Main/Main";
 
@@ -39,41 +40,7 @@ const HomeComponent: React.FC = () => {
             hasImage={false}
           />
         }
-        RightSection={<ArtBlock />}
-      />
-
-      <Main
-        LeftSection={
-          <Info
-            index={2}
-            hasButton={true}
-            buttonText="See my Work"
-            textInfo={[
-              { class: "title2", text: "test2 fear2 test 2bear2" },
-              { class: "subTitle", text: "tes2t2 test2" },
-              { class: "paragrap22h", text: "testtt2222222222tttttttttttt" },
-            ]}
-            hasImage={false}
-          />
-        }
-        RightSection={<ArtBlock />}
-      />
-
-      <Main
-        LeftSection={
-          <Info
-            index={3}
-            hasButton={true}
-            buttonText="See my Work"
-            textInfo={[
-              { class: "title3333", text: "test3 fea3r test33 bear3" },
-              { class: "subTitle", text: "test test" },
-              { class: "paragraph", text: "testtttttttttttttt3333333333333" },
-            ]}
-            hasImage={false}
-          />
-        }
-        RightSection={<ArtBlock />}
+        RightSection={<Grid direction="column-reverse" quadContainer />}
       />
     </div>
   );

@@ -12,8 +12,8 @@
   --text-gray: #a5a5a5;
   --text-white: #fff;
   --text-black: #000;
-  --footer-height: 80px;
-  --header-height: 10vh;
+  --footer-height: 60px;
+  --header-height: 60px;
 }
 
 * {

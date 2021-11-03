@@ -3,8 +3,8 @@
 import classes from "./Info.module.css";
 import Image from "next/image";
 import Button from "../button/Button";
-import { useEffect, useRef } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 import { homeButtonStyle } from "../button/buttonStyles";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 interface InfoProps {
