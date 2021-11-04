@@ -17,15 +17,6 @@ const navVariants = {
   },
 };
 
-const listItemVariants = {
-  hover: {
-    boxShadow: "0px 0px 10px #000",
-    transition: {
-      duration: 2,
-    },
-  },
-};
-
 let contactVariant = {
   close: {
     translateY: 0,
@@ -67,9 +58,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
           initial="close"
           animate={contact ? "open" : "close"}
           onClick={() => setContact(!contact)}
-          className={`${classes.nav__listItem}  ${
-            contact && classes.nav__listItemColumn
-          }`}
+          className={classes.nav__listItem}
         >
           Contact
         </motion.li>

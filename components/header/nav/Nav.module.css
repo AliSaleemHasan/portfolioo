@@ -24,12 +24,10 @@
   font-weight: bold;
   position: relative;
   cursor: pointer;
-}
-
-.nav__listItemColumn {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .nav__listItem::before {
   content: "";
   position: absolute;

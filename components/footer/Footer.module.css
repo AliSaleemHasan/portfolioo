@@ -15,5 +15,6 @@
   .footer {
     position: static;
     width: 100vw !important;
+    scroll-snap-align: start;
   }
 }
