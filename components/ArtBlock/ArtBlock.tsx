@@ -1,11 +1,26 @@
-import { FC } from "react";
+import { FC, useRef } from "react";
 import { motion } from "framer-motion";
 import SemiBlock from "./SemiBlock";
 import blockInfo from "./BlockInfo";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
+let artBlockVariants = {
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 const ArtBlock: FC = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const entry = useIntersectionObserver(ref, {});
+
   return (
-    <div
+    <motion.div
+      ref={ref}
+      variants={artBlockVariants}
+      initial="hidden"
+      animate={!!entry?.isIntersecting ? "visible" : "hidden"}
       style={{
         display: "flex",
         alignItems: "center",
@@ -18,7 +33,7 @@ const ArtBlock: FC = () => {
       }}
     >
       {blockInfo.map((block, index) => (
-        <motion.div
+        <div
           key={index}
           style={{
             width: block.width,
@@ -39,9 +54,9 @@ const ArtBlock: FC = () => {
             firstStyles={block.second.firstStyle}
             secondStyles={block.second.secondStyle}
           />
-        </motion.div>
+        </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

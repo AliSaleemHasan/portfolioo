@@ -31,8 +31,7 @@ const HomeComponent: React.FC = () => {
         LeftSection={
           <Info
             index={1}
-            hasButton={true}
-            buttonText="See my Work"
+            hasButton={false}
             textInfo={[
               {
                 class: "subTitle",
