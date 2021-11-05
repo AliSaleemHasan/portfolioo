@@ -25,7 +25,8 @@
   position: relative;
   cursor: pointer;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__listItem::before {
@@ -57,6 +58,19 @@
 .nav__listItem:nth-child(4)::before {
   background-color: var(--primary);
 }
+
+.nav__listItem div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav__listItemOpen div {
+  height: 25%;
+}
+
 @media only screen and (max-width: 1000px) {
   .nav {
     left: 0;

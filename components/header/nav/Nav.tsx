@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { animate, motion } from "framer-motion";
 import classes from "./Nav.module.css";
+import ContactForm from "../../contactForm/ContactForm";
 const navVariants = {
   hidden: {
     x: "100vw",
@@ -57,10 +58,16 @@ const Nav: React.FC<NavProps> = ({ open }) => {
           variants={contactVariant}
           initial="close"
           animate={contact ? "open" : "close"}
-          onClick={() => setContact(!contact)}
-          className={classes.nav__listItem}
+          className={`${classes.nav__listItem} ${
+            contact && classes.nav__listItemOpen
+          } `}
         >
-          Contact
+          <div onClick={() => setContact(!contact)}>
+            <p>Contact</p>
+          </div>
+          {contact && (
+            <ContactForm background="var(--pink)" color="var(--text-white)" />
+          )}
         </motion.li>
       </ul>
     </motion.div>
