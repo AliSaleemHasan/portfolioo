@@ -26,9 +26,14 @@ const Home: NextPage = () => {
             hasButton={true}
             buttonText="See my Work"
             textInfo={[
-              { class: "title", text: "test fear test bear" },
-              { class: "subTitle", text: "test test" },
-              { class: "paragraph", text: "testtttttttttttttt" },
+              {
+                class: "paragraph gray",
+                text: "web developer /ui-ux designer",
+              },
+              {
+                class: "subTitle",
+                text: "I translate your requirements into powerfull , beautifull and responsive websites",
+              },
             ]}
             hasImage={false}
           />

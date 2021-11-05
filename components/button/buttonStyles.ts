@@ -8,5 +8,20 @@ export const homeButtonStyle = {
   margin: "10px auto",
   borderRadius: "10px",
   outline: "none",
+  border: "none",
+  cursor: "pointer",
+};
+
+export const resumeButtonStyle = {
+  background: "var(--text-white)",
+  width: "clamp(100px,15vw,200px)",
+  color: "var(--primary)",
+  fontFamily: "var(--font-family)",
+  fontSize: "clamp(13px,2vw,25px)",
+  margin: "15px auto",
+  borderRadius: "15px",
+  padding: "10px",
+  outline: "none",
+  border: "none",
   cursor: "pointer",
 };

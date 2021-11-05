@@ -1,5 +1,7 @@
 import classes from "./AboutCard.module.css";
 import Image from "next/image";
+import Button from "../button/Button";
+import { resumeButtonStyle } from "../button/buttonStyles";
 const AboutCard: React.FC = () => {
   return (
     <div className={classes.aboutCard}>
@@ -16,6 +18,11 @@ const AboutCard: React.FC = () => {
           I am Ali Saleem Hasan from Syria , Currently studying Information
           technology engineering at Damasucs university and work as freelancer
         </p>
+        <Button
+          onClick={() => {}}
+          text="Resume"
+          style={resumeButtonStyle}
+        ></Button>
       </div>
     </div>
   );
