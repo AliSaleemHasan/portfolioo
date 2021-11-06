@@ -11,13 +11,13 @@ interface InfoProps {
   hasButton: boolean;
   buttonText?: string;
   buttonClass?: string;
+  background?: string;
+  isContact?: boolean;
   hasImage: boolean;
   index: number;
   imageInfo?: {
     name: string;
     source: string;
-    width: number;
-    height: number;
   };
   textInfo: {
     class: string;
@@ -42,25 +42,34 @@ const Info: React.FC<InfoProps> = ({
   buttonText,
   hasImage,
   imageInfo,
-  index,
+  background,
   textInfo,
+  isContact,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const entry = useIntersectionObserver(ref, {});
 
   return (
-    <div ref={ref} className={classes.info}>
+    <div
+      ref={ref}
+      className={`${classes.info} ${isContact && classes.info__maxHeight}`}
+      style={{
+        background: background || "initial",
+      }}
+    >
       <motion.div
         variants={infoVariants}
         animate={!!entry?.isIntersecting ? "visible" : "hidden"}
       >
         {hasImage && imageInfo && (
-          <Image
-            alt={imageInfo.name}
-            src={imageInfo?.source}
-            width={imageInfo.width}
-            height={imageInfo.height}
-          />
+          <div className={classes.info__imageContainer}>
+            <Image
+              alt={imageInfo.name}
+              src={imageInfo?.source}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         )}
 
         {textInfo.map((text, index) => (

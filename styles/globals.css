@@ -2,7 +2,7 @@
 :root {
   --padding-x: clamp(20px, 2vw, 60px);
   --padding-y: 50px;
-  --nav-background: rgba(11, 21, 39, 0.7);
+  --nav-background: rgba(11, 21, 39, 0.9);
   --nav-icon-color: rgba(6, 8, 14, 0.9);
   --font-family: "sans-serif";
   --pink: #ef6c62;
@@ -10,7 +10,7 @@
   --blue-sky: #0786a1;
   --primary: #0b1527;
   --of-white: #f2e9d8;
-  --text-gray: #a5a5a5;
+  --text-gray: #666;
   --text-white: #fff;
   --text-black: #000;
   --footer-height: 60px;
@@ -23,6 +23,7 @@
 }
 html,
 body {
+  overflow-y: overlay;
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -40,13 +41,13 @@ a {
 .title {
   font-weight: 600;
   font-family: var(--font-family);
-  font-size: clamp(30px, 5vw, 100px);
+  font-size: clamp(25px, 5vw, 80px);
   margin: 15px 0;
 }
 
 .subTitle {
   font-family: var(--font-family);
-  font-size: clamp(20px, 5vw, 40px);
+  font-size: clamp(20px, 3vw, 40px);
 
   margin: 10px 0;
 }
@@ -59,4 +60,8 @@ a {
 
 .gray {
   color: var(--text-gray);
+}
+
+.white {
+  color: var(--text-white);
 }

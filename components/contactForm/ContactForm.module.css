@@ -3,12 +3,18 @@
   display: flex;
   flex-direction: column;
   width: 80%;
+  margin: 15% auto;
+  height: 80%;
 }
 
 .contactForm input {
   height: 50px;
   margin: 10px 0px;
   border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--text-black);
+  outline: none;
+  padding: 5px;
 }
 
 .contactForm label {
@@ -16,5 +22,15 @@
 }
 
 .contactForm textarea {
-  flex: 1;
+  flex: 0.7;
+  border: 1px solid var(--text-black);
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contactForm {
+    margin: 8% auto;
+  }
 }

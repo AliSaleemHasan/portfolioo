@@ -28,7 +28,7 @@ const navIconLinesVariants = {
   },
   close: {
     width: "100%",
-    background: "#fff",
+    backgroundColor: "#fff",
   },
 };
 interface NavIconProps {

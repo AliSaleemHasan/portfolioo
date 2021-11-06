@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         <Logo />
         <NavIcon open={open} setOpen={setOpen} />
       </div>
-      <Nav open={open} />
+      <Nav open={open} setOpen={setOpen} />
     </div>
   );
 };

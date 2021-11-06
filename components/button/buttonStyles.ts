@@ -1,5 +1,5 @@
 export const homeButtonStyle = {
-  background: "#ef6c62",
+  backgroundColor: "#ef6c62",
   width: "clamp(150px,30vw,300px)",
   padding: "15px",
   color: "var(--text-white)",
@@ -13,7 +13,7 @@ export const homeButtonStyle = {
 };
 
 export const resumeButtonStyle = {
-  background: "var(--blue-sky)",
+  backgroundColor: "var(--blue-sky)",
   width: "clamp(100px,15vw,200px)",
   color: "var(--text-white)",
   fontFamily: "var(--font-family)",
@@ -26,9 +26,12 @@ export const resumeButtonStyle = {
   cursor: "pointer",
 };
 
-export const formButtonStyle = (background: string, color: string): Object => {
+export const formButtonStyle = (
+  backgroundColor: string,
+  color: string
+): Object => {
   return {
-    background,
+    backgroundColor,
     color,
     width: "clamp(150px,30vw,300px)",
     padding: "15px",
@@ -40,4 +43,16 @@ export const formButtonStyle = (background: string, color: string): Object => {
     border: "none",
     cursor: "pointer",
   };
+};
+
+export const projectButtonsStyle = {
+  width: "clamp(150px,30vw,300px)",
+  padding: "15px",
+  fontFamily: "var(--font-family)",
+  fontSize: "clamp(15px,2vw,30px)",
+  margin: "10px auto",
+  backgroundColor: " var(--of-white)",
+  borderRadius: "15px",
+  cursor: "pointer",
+  boxShadow: " 40px 43px 4px rgba(0, 0, 0, 0.25)",
 };

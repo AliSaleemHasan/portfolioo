@@ -23,7 +23,7 @@ let gridItemInlineStyle = (direction: string): Object => {
 const Grid: React.FC<GridProps> = ({ direction, quadContainer, Child }) => {
   return (
     <div style={{ flexDirection: direction }} className={classes.grid}>
-      {Child ? Child : <h1>g</h1>}
+      {Child ? Child : ""}
       <div
         className={classes.grid__item_1}
         style={gridItemInlineStyle(direction)}

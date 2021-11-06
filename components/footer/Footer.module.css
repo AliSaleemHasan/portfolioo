@@ -4,7 +4,8 @@
   background-color: var(--primary);
   position: fixed;
   bottom: 0;
-  left: 0;
+  /* left is -0.25 because of scroll is pushhing right section to the left */
+  left: -0.25%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -14,7 +15,7 @@
 @media only screen and (max-width: 1000px) {
   .footer {
     position: static;
-    width: 100vw !important;
+    width: 100vw;
     scroll-snap-align: start;
   }
 }

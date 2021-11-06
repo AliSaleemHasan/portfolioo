@@ -2,6 +2,7 @@ import { useState } from "react";
 import { animate, motion } from "framer-motion";
 import classes from "./Nav.module.css";
 import ContactForm from "../../contactForm/ContactForm";
+import { useRouter } from "next/router";
 const navVariants = {
   hidden: {
     x: "100vw",
@@ -10,7 +11,7 @@ const navVariants = {
     },
   },
   visible: {
-    x: 0,
+    x: -5,
     transition: {
       duration: 1,
       ease: "easeInOut",
@@ -22,7 +23,7 @@ let contactVariant = {
   close: {
     translateY: 0,
     height: "25%",
-    background: "initial",
+    backgroundColor: "initial",
     transition: {
       duration: 1,
       ease: "easeInOut",
@@ -31,7 +32,7 @@ let contactVariant = {
   open: {
     height: "100%",
     translateY: "-75%",
-    background: "var(--primary)",
+    backgroundColor: "var(--primary)",
     transition: {
       duration: 1,
       ease: "easeInOut",
@@ -40,9 +41,17 @@ let contactVariant = {
 };
 interface NavProps {
   open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const Nav: React.FC<NavProps> = ({ open }) => {
+
+const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
+  const router = useRouter();
   const [contact, setContact] = useState(false);
+  let navigation = (destination: string): void => {
+    setOpen(!open);
+    router.push(destination);
+  };
+
   return (
     <motion.div
       variants={navVariants}
@@ -51,9 +60,20 @@ const Nav: React.FC<NavProps> = ({ open }) => {
       className={classes.nav}
     >
       <ul className={classes.nav__list}>
-        <li className={classes.nav__listItem}>Home</li>
-        <li className={classes.nav__listItem}>Work</li>
-        <li className={classes.nav__listItem}>Resume</li>
+        <li className={classes.nav__listItem} onClick={() => navigation("/")}>
+          Home
+        </li>
+        <li
+          className={classes.nav__listItem}
+          onClick={() => navigation("work")}
+        >
+          Work
+        </li>
+        <li className={classes.nav__listItem}>
+          <a href="Ali-Hasan_Resume.pdf" download>
+            Resume
+          </a>
+        </li>
         <motion.li
           variants={contactVariant}
           initial="close"

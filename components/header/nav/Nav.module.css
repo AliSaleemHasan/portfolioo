@@ -2,12 +2,14 @@
   position: fixed;
   top: 0;
   left: 50vw;
-  width: 50vw;
+  width: 50%;
   height: 100vh;
   background-color: var(--nav-background);
+  box-sizing: border-box;
 }
 .nav__list {
   height: 100%;
+
   border: 2px solid var(--text-gray);
 }
 .nav__listItem {
@@ -74,7 +76,7 @@
 @media only screen and (max-width: 1000px) {
   .nav {
     left: 0;
-    width: 100%;
+    width: 103%;
   }
   .nav__listItem::before {
     transition: none;

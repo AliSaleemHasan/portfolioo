@@ -34,7 +34,7 @@ const QuarterBlock: FC<QuarterBlockProps> = ({ direction, styles }) => {
       style={{
         width: `${direction === "vertical" ? "100%" : "50%"}`,
         height: `${direction === "vertical" ? "50%" : "100%"}`,
-        background: styles.color,
+        backgroundColor: styles.color,
         borderRadius: styles.radius,
       }}
     ></motion.div>

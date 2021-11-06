@@ -8,10 +8,17 @@ import classes from "./Main.module.css";
 interface MainProps {
   LeftSection: React.ReactNode;
   RightSection: React.ReactNode;
+  reverseLayout?: boolean;
 }
-const Main: React.FC<MainProps> = ({ LeftSection, RightSection }) => {
+const Main: React.FC<MainProps> = ({
+  LeftSection,
+  RightSection,
+  reverseLayout,
+}) => {
   return (
-    <div className={classes.main}>
+    <div
+      className={`${classes.main} ${reverseLayout && classes.main__reverse}`}
+    >
       <div className={classes.section}>{LeftSection}</div>
       <div className={classes.section}>{RightSection}</div>
     </div>

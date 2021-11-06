@@ -25,7 +25,7 @@ const SemiBlock: FC<SemiBlockProps> = ({
         display: `${direction === "vertical" ? "block" : "flex"}`,
         width: `${direction === "vertical" ? "50%" : "100%"}`,
         height: `${direction === "vertical" ? "100%" : "50%"}`,
-        background: color,
+        backgroundColor: color,
       }}
     >
       <QuarterBlock direction={direction} styles={firstStyles} />
