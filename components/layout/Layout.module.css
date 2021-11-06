@@ -3,4 +3,5 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
