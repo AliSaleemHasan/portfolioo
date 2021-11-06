@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import classes from "./NavIcon.module.css";
+import classes from "../../../styles/NavIcon.module.css";
 const navIconVariants = {
   hover: {
     scale: [1, 1.2, 1],

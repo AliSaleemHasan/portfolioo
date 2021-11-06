@@ -1,7 +1,7 @@
-import classes from "./AboutCard.module.css";
+import classes from "../styles/AboutCard.module.css";
 import Image from "next/image";
-import Button from "../button/Button";
-import { resumeButtonStyle } from "../button/buttonStyles";
+import Button from "./Button";
+import { resumeButtonStyle } from "../styles/buttonStyles";
 const AboutCard: React.FC = () => {
   return (
     <div className={classes.aboutCard}>

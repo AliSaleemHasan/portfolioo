@@ -1,14 +1,18 @@
 import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import Layout from "../components/layout/Layout";
+import type { AppProps, AppContext } from "next/app";
+import Layout from "../components/Layout";
+import Head from "next/head";
 function MyApp({ Component, pageProps }: AppProps) {
-  // use router to get url path and use it as animatePresence key
   return (
     <>
       <Layout>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
         <Component {...pageProps} />
       </Layout>
     </>
   );
 }
+
 export default MyApp;

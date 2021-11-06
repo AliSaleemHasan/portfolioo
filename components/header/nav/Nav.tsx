@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { animate, motion } from "framer-motion";
-import classes from "./Nav.module.css";
-import ContactForm from "../../contactForm/ContactForm";
+import classes from "../../../styles/Nav.module.css";
+import ContactForm from "../../ContactForm";
 import { useRouter } from "next/router";
 const navVariants = {
   hidden: {
@@ -85,9 +85,7 @@ const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
           <div onClick={() => setContact(!contact)}>
             <p>Contact</p>
           </div>
-          {contact && (
-            <ContactForm background="var(--pink)" color="var(--text-white)" />
-          )}
+          {contact && <ContactForm />}
         </motion.li>
       </ul>
     </motion.div>

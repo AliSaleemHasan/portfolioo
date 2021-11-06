@@ -1,8 +1,9 @@
-import classes from "./Grid.module.css";
+import classes from "../styles/Grid.module.css";
 interface GridProps {
-  direction: any;
-  quadContainer?: boolean;
-  Child?: React.ReactNode;
+  properties: {
+    direction: any;
+    quadContainer?: boolean;
+  };
 }
 
 // change style of grid item on state change
@@ -20,19 +21,24 @@ let gridItemInlineStyle = (direction: string): Object => {
       };
 };
 
-const Grid: React.FC<GridProps> = ({ direction, quadContainer, Child }) => {
+const Grid: React.FC<GridProps> = ({ properties, children }) => {
   return (
-    <div style={{ flexDirection: direction }} className={classes.grid}>
-      {Child ? Child : ""}
+    <div
+      style={{ flexDirection: properties.direction }}
+      className={classes.grid}
+    >
+      {children}
       <div
         className={classes.grid__item_1}
-        style={gridItemInlineStyle(direction)}
+        style={gridItemInlineStyle(properties.direction)}
       >
-        {quadContainer && <div className={classes.item__child}></div>}
+        {properties.quadContainer && (
+          <div className={classes.item__child}></div>
+        )}
         <div className={classes.item__child}></div>
       </div>
       <div
-        style={gridItemInlineStyle(direction)}
+        style={gridItemInlineStyle(properties.direction)}
         className={classes.grid__item_2}
       >
         <div className={classes.item__child}></div>

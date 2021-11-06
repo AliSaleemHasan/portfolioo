@@ -1,12 +1,12 @@
 // info is every section with text (info)
 
-import classes from "./Info.module.css";
+import classes from "../styles/Info.module.css";
 import Image from "next/image";
-import Button from "../button/Button";
+import Button from "./Button";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { homeButtonStyle } from "../button/buttonStyles";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { homeButtonStyle } from "../styles/buttonStyles";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 interface InfoProps {
   hasButton: boolean;
   buttonText?: string;
@@ -14,7 +14,6 @@ interface InfoProps {
   background?: string;
   isContact?: boolean;
   hasImage: boolean;
-  index: number;
   imageInfo?: {
     name: string;
     source: string;

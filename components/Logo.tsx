@@ -38,6 +38,7 @@ const Logo: React.FC = () => (
     viewBox="0 0 1700 91"
     height="91mm"
     width="200mm"
+    
   >
     <defs id="defs2" />
     <metadata id="metadata5"></metadata>

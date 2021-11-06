@@ -1,7 +1,7 @@
 // main section of each page
 // main component
 
-import classes from "./Main.module.css";
+import classes from "../styles/Main.module.css";
 
 // main always have to section ,left and right
 // each section is component

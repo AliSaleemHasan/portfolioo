@@ -1,6 +1,6 @@
-import Button from "../button/Button";
-import classes from "./ProjectButtons.module.css";
-import { projectButtonsStyle } from "../button/buttonStyles";
+import Button from "./Button";
+import classes from "../styles/ProjectButtons.module.css";
+import { projectButtonsStyle } from "../styles/buttonStyles";
 const ProjectButtons: React.FC = () => {
   return (
     <div className={classes.projectButtons}>
