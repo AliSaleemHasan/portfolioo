@@ -4,8 +4,12 @@ import Info from "../components/utils/Info";
 import Main from "../components/layout/Main";
 import childrenHelper from "../helpers/mainChildrensHelper";
 import infos from "../infos/homeComponentsInfos";
+import { mainInfos } from "../types/info";
 
-const Home: NextPage = ({}) => {
+interface PageProps {
+  pageInfo: mainInfos;
+}
+const Home: NextPage<PageProps> = ({ pageInfo }) => {
   return (
     <div>
       <Head>
@@ -14,7 +18,7 @@ const Home: NextPage = ({}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {infos.map((info, index) => {
+      {pageInfo.map((info, index) => {
         return (
           <Main
             key={index}
@@ -39,6 +43,6 @@ const Home: NextPage = ({}) => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => ({
-  props: { homeInfo: "fuck" },
+  props: { pageInfo: infos },
 });
 export default Home;

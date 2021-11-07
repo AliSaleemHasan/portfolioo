@@ -4,8 +4,9 @@ import Info from "../components/utils/Info";
 import Main from "../components/layout/Main";
 import childrenHelper from "../helpers/mainChildrensHelper";
 import infos from "../infos/workComponentsInfos";
+import { PageProps } from "../types/pages";
 
-const Work: NextPage = ({}) => {
+const Work: NextPage<PageProps> = ({ pageInfo }) => {
   return (
     <div>
       <Head>
@@ -14,7 +15,7 @@ const Work: NextPage = ({}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {infos.map((info, index) => {
+      {pageInfo.map((info, index) => {
         return (
           <Main
             key={index}
@@ -41,9 +42,8 @@ const Work: NextPage = ({}) => {
 };
 
 export const getStaticProps: GetStaticProps = (context) => {
-  const homeInfo = "test";
   return {
-    props: { homeInfo },
+    props: { pageInfo: infos },
   };
 };
 export default Work;
