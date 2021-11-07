@@ -1,4 +1,6 @@
-const infos = [
+import { mainInfos } from "../types/info";
+
+const infos: mainInfos = [
   {
     info: {
       hasButton: true,

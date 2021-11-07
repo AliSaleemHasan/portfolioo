@@ -1,9 +1,11 @@
-const color1 = "#ffffff";
-const color2 = "#ef6c62";
-const color3 = "#F8B819";
-const color4 = "#0B1527";
-const color5 = "#0786A1";
-const info = [
+import { artBlockInfos } from "../types/info";
+
+const color1 = "#ffffff"; //white
+const color2 = "#ef6c62"; //pink
+const color3 = "#F8B819"; //yellow
+const color4 = "#0B1527"; //dark blue
+const color5 = "#0786A1"; //sky blue
+const info: artBlockInfos = [
   {
     direction: "horizontal",
     width: "50%",
