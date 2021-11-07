@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
-import classes from "../../../styles/NavIcon.module.css";
+import classes from "../../../../styles/NavIcon.module.css";
+import { NavProps } from "../../../../types/layout";
+
 const navIconVariants = {
   hover: {
     scale: [1, 1.2, 1],
@@ -31,11 +32,8 @@ const navIconLinesVariants = {
     backgroundColor: "#fff",
   },
 };
-interface NavIconProps {
-  open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-const NavIcon: React.FC<NavIconProps> = ({ open, setOpen }) => {
+
+const NavIcon: React.FC<NavProps> = ({ open, setOpen }) => {
   return (
     <motion.div
       onClick={() => setOpen(!open)}

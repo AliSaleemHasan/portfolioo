@@ -12,7 +12,7 @@ const info = [
       color: color2,
       firstStyle: {
         radius: "0 50% 50% 0",
-        color: color4,
+        color: color3,
       },
       secondStyle: {
         radius: "50% 0 0 50%",
@@ -23,11 +23,11 @@ const info = [
       color: color5,
       firstStyle: {
         radius: "0 50% 50% 0",
-        color: color3,
+        color: color2,
       },
       secondStyle: {
         radius: "50% 0 0 50%",
-        color: color2,
+        color: color4,
       },
     },
   },

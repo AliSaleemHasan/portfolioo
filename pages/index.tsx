@@ -1,7 +1,7 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import Info from "../components/Info";
-import Main from "../components/Main";
+import Info from "../components/utils/Info";
+import Main from "../components/layout/Main";
 import childrenHelper from "../helpers/mainChildrensHelper";
 import infos from "../infos/homeComponentsInfos";
 

@@ -1,10 +1,5 @@
-import classes from "../styles/Grid.module.css";
-interface GridProps {
-  properties: {
-    direction: any;
-    quadContainer?: boolean;
-  };
-}
+import classes from "../../styles/Grid.module.css";
+import { GridProps } from "../../types/grid";
 
 // change style of grid item on state change
 let gridItemInlineStyle = (direction: string): Object => {

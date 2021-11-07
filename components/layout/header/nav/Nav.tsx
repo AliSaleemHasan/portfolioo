@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { animate, motion } from "framer-motion";
-import classes from "../../../styles/Nav.module.css";
-import ContactForm from "../../ContactForm";
+import { motion } from "framer-motion";
+import classes from "../../../../styles/Nav.module.css";
+import ContactForm from "../../../utils/ContactForm";
 import { useRouter } from "next/router";
+import { NavProps } from "../../../../types/layout";
 const navVariants = {
   hidden: {
     x: "100vw",
@@ -39,10 +40,6 @@ let contactVariant = {
     },
   },
 };
-interface NavProps {
-  open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
 const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
   const router = useRouter();

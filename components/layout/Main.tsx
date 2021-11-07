@@ -1,15 +1,11 @@
 // main section of each page
 // main component
 
-import classes from "../styles/Main.module.css";
-
+import classes from "../../styles/Main.module.css";
+import { MainProps } from "../../types/layout";
 // main always have to section ,left and right
 // each section is component
-interface MainProps {
-  LeftSection: React.ReactNode;
-  RightSection: React.ReactNode;
-  reverseLayout?: boolean;
-}
+
 const Main: React.FC<MainProps> = ({
   LeftSection,
   RightSection,

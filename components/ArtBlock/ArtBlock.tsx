@@ -1,7 +1,7 @@
 import { FC, useRef } from "react";
 import { motion } from "framer-motion";
 import SemiBlock from "./SemiBlock";
-import blockInfo from "./BlockInfo";
+import blockInfo from "../../infos/BlockInfo";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 let artBlockVariants = {
