@@ -13,7 +13,11 @@ const childrenHelper = (
   if (name === "grid")
     return (
       <Grid properties={properties}>
-        {childName === "card" ? <AboutCard /> : <ProjectButtons />}
+        {childName === "card" ? (
+          <AboutCard />
+        ) : (
+          <ProjectButtons properties={childProperties} />
+        )}
       </Grid>
     );
   else if (name === "art") return <ArtBlock />;

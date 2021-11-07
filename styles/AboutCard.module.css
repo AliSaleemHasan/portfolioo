@@ -24,6 +24,21 @@
   margin: 20px auto;
 }
 
+.aboutCard__resume {
+  background-color: var(--blue-sky);
+  width: clamp(100px, 15vw, 200px);
+  color: var(--text-white);
+  font-family: var(--font-family);
+  font-size: clamp(13px, 2vw, 25px);
+  margin: 15px auto;
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
 @media only screen and (max-width: 786px) {
   .aboutCard {
     background-color: transparent;

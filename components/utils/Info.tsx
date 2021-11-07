@@ -29,6 +29,7 @@ const Info: React.FC<InfoProps> = ({
   background,
   textInfo,
   isContact,
+  buttonUrl,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const entry = useIntersectionObserver(ref, {});
@@ -64,10 +65,9 @@ const Info: React.FC<InfoProps> = ({
 
         {hasButton && buttonText && (
           <Button
+            external={false}
+            url={"buttonUrl?.url"}
             text={buttonText}
-            onClick={() => {
-              console.log("test");
-            }}
             style={homeButtonStyle}
           />
         )}

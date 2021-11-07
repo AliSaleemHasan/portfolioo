@@ -8,8 +8,22 @@
   left: -0.25%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  z-index: 10;
+  z-index: 4;
+  justify-content: space-between;
+  padding: var(--padding-x);
+}
+
+.footer__icons {
+  flex: 0.2;
+  display: flex;
+  justify-content: space-between;
+  margin-right: clamp(20px, 2vw, 35px);
+}
+.footer__textContainer {
+  flex: 0.8;
+}
+.footer__icons * {
+  margin: 0 4px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -17,5 +31,11 @@
     position: static;
     width: 100vw;
     scroll-snap-align: start;
+  }
+  .footer__textContainer {
+    display: none;
+  }
+  .footer__icons {
+    flex: 1;
   }
 }

@@ -4,3 +4,9 @@ export interface GridProps {
     quadContainer?: boolean;
   };
 }
+export interface projectButtonsProps {
+  properties: {
+    link1: any;
+    link2: any;
+  };
+}

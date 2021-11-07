@@ -1,7 +1,80 @@
 import classes from "../../styles/Footer.module.css";
-
+import Github from "../icons/Github";
+import Gmail from "../icons/Gmail";
+import LinkedIn from "../icons/LinkedIn";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 const Footer: React.FC = () => {
-  return <div className={classes.footer}></div>;
+  const [text, setText] = useState<string>("");
+
+  let textVariants = {
+    hidden: {
+      y: "200%",
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+  return (
+    <div className={classes.footer}>
+      <div className={classes.footer__icons}>
+        <a
+          onMouseOver={() => {
+            setText("ali1saleem1hasan@gmail.com");
+          }}
+          onMouseLeave={() => {
+            setText("");
+          }}
+          href="mailto:ali1saleem1hasan@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Gmail />
+        </a>
+        <a
+          onMouseOver={() => {
+            setText("github.com/AliSaleemHasan");
+          }}
+          onMouseLeave={() => {
+            setText("");
+          }}
+          href="https://github.com/AliSaleemHasan"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Github />
+        </a>
+        <a
+          onMouseOver={() => {
+            setText("linkedin.com/in/ali-saleem-hasan/");
+          }}
+          onMouseLeave={() => {
+            setText("");
+          }}
+          href="https://www.linkedin.com/in/ali-saleem-hasan/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <LinkedIn />
+        </a>
+      </div>
+      <div className={classes.footer__textContainer}>
+        <motion.p
+          variants={textVariants}
+          initial="hidden"
+          animate={text ? "visible" : "hidden"}
+          className="paragraph white"
+        >
+          {text}
+        </motion.p>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;

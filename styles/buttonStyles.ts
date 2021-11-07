@@ -1,13 +1,15 @@
 export const homeButtonStyle = {
+  display: "block",
   backgroundColor: "#ef6c62",
   width: "clamp(150px,30vw,300px)",
   padding: "15px",
   color: "var(--text-white)",
   fontFamily: "var(--font-family)",
   fontSize: "clamp(15px,2vw,30px)",
-  margin: "10px auto",
+  margin: "20px 0",
   borderRadius: "10px",
   outline: "none",
+  textAlign: "center",
   border: "none",
   cursor: "pointer",
 };
@@ -31,21 +33,26 @@ export const formButtonStyle = (
   color: string
 ): Object => {
   return {
+    display: "block",
     backgroundColor,
     color,
     width: "clamp(150px,30vw,300px)",
     padding: "15px",
     fontFamily: "var(--font-family)",
     fontSize: "clamp(15px,2vw,30px)",
-    margin: "10px auto",
+    margin: "20px 0px",
     borderRadius: "10px",
     outline: "none",
+    textAlign: "center",
+
     border: "none",
     cursor: "pointer",
   };
 };
 
 export const projectButtonsStyle = {
+  display: "block",
+  textAlign: "center",
   width: "clamp(150px,30vw,300px)",
   padding: "15px",
   fontFamily: "var(--font-family)",

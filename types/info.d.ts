@@ -24,6 +24,10 @@ type textInfos = { class: string; text: string }[];
 interface mainLeftInfo {
   hasButton: boolean;
   buttonText?: string;
+  buttonUrl?: {
+    external: boolean;
+    url: any;
+  };
   textInfo: textInfos;
   hasImage: boolean;
   imageInfo?: {
@@ -39,10 +43,12 @@ interface mainRightInfo {
   name: string;
   properties: any;
   childName: string;
+  childProps?: Object;
 }
 
 interface mainInfo {
   info: mainLeftInfo;
   right: mainRightInfo;
+  reverseLayout?: boolean;
 }
 export type mainInfos = mainInfo[];

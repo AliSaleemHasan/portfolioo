@@ -1,7 +1,8 @@
 export interface ButtonProps {
   text: string;
   style: Object;
-  onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
+  url?: any;
+  external?: boolean;
 }
 
 export interface InfoProps {
@@ -9,6 +10,10 @@ export interface InfoProps {
   buttonText?: string;
   buttonClass?: string;
   background?: string;
+  buttonUrl?: {
+    external: boolean;
+    url: any;
+  };
   isContact?: boolean;
   hasImage: boolean;
   imageInfo?: {

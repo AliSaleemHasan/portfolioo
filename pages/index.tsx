@@ -4,11 +4,7 @@ import Info from "../components/utils/Info";
 import Main from "../components/layout/Main";
 import childrenHelper from "../helpers/mainChildrensHelper";
 import infos from "../infos/homeComponentsInfos";
-import { mainInfos } from "../types/info";
-
-interface PageProps {
-  pageInfo: mainInfos;
-}
+import { PageProps } from "../types/pages";
 const Home: NextPage<PageProps> = ({ pageInfo }) => {
   return (
     <div>
@@ -24,6 +20,7 @@ const Home: NextPage<PageProps> = ({ pageInfo }) => {
             key={index}
             LeftSection={
               <Info
+                buttonUrl={info.info.buttonUrl}
                 hasButton={info.info.hasButton}
                 buttonText={info.info.buttonText}
                 textInfo={info.info.textInfo}

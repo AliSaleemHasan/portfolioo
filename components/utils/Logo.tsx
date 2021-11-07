@@ -35,10 +35,9 @@ const Logo: React.FC = () => (
     xmlns="http://www.w3.org/2000/svg"
     id="svg8"
     version="1.1"
-    viewBox="0 0 1700 91"
-    height="91mm"
-    width="200mm"
-    
+    viewBox="0 0 200 40 "
+    height="70"
+    width="70"
   >
     <defs id="defs2" />
     <metadata id="metadata5"></metadata>

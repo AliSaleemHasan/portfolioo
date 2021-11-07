@@ -5,6 +5,10 @@ const infos: mainInfos = [
     info: {
       hasButton: true,
       buttonText: "See My Work",
+      buttonUrl: {
+        external: true,
+        url: "/work",
+      },
       textInfo: [
         {
           class: "paragraph gray",

@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: var(--padding-x);
   align-items: center;
+  z-index: 100;
 }
 .header__container {
   overflow: hidden;

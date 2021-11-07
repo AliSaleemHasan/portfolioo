@@ -3,11 +3,14 @@
   padding: var(--header-height) var(--padding-x);
   display: flex;
   flex-direction: column;
+  z-index: 100;
+
   justify-content: center;
 }
 
 .info__maxHeight {
   height: 100%;
+  pointer-events: none;
 }
 .info__imageContainer {
   position: relative;

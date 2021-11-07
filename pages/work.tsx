@@ -19,6 +19,7 @@ const Work: NextPage<PageProps> = ({ pageInfo }) => {
         return (
           <Main
             key={index}
+            reverseLayout={info.reverseLayout}
             LeftSection={
               <Info
                 background={info.info.background}
@@ -32,7 +33,8 @@ const Work: NextPage<PageProps> = ({ pageInfo }) => {
             RightSection={childrenHelper(
               info.right.name,
               info.right.properties,
-              info.right.childName
+              info.right.childName,
+              info.right.childProps
             )}
           />
         );

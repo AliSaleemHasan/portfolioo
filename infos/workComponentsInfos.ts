@@ -43,13 +43,19 @@ const infos: mainInfos = [
         quadContainer: false,
       },
       childName: "project",
+      childProps: {
+        link1: "https://cchaty-app.herokuapp.com",
+        link2: "https://github.com/AliSaleemHasan/lettalk",
+      },
     },
   },
   {
+    reverseLayout: true,
     info: {
       background: "var(--pink)",
       isContact: true,
       hasButton: false,
+
       buttonText: "",
       textInfo: [
         {
