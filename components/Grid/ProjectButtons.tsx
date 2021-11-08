@@ -8,13 +8,13 @@ const ProjectButtons: React.FC<projectButtonsProps> = ({ properties }) => {
       <Button
         external
         url={properties.link1}
-        text="Try The App"
+        text={`Try ${properties.name} App`}
         style={projectButtonsStyle}
       />
       <Button
         external
         url={properties.link2}
-        text="See App Code"
+        text={`See ${properties.name} Code`}
         style={projectButtonsStyle}
       />
     </div>

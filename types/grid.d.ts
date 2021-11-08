@@ -6,6 +6,7 @@ export interface GridProps {
 }
 export interface projectButtonsProps {
   properties: {
+    name: string;
     link1: any;
     link2: any;
   };

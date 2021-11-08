@@ -46,6 +46,7 @@ const infos: mainInfos = [
       },
       childName: "project",
       childProps: {
+        name: "Lettalk",
         link1: "https://cchaty-app.herokuapp.com",
         link2: "https://github.com/AliSaleemHasan/lettalk",
       },
@@ -72,6 +73,7 @@ const infos: mainInfos = [
       },
       childName: "project",
       childProps: {
+        name: "AliTube",
         link1: "https://alitube-clone.netlify.app/",
         link2: "https://github.com/AliSaleemHasan/youtube-clone",
       },
@@ -98,8 +100,9 @@ const infos: mainInfos = [
       },
       childName: "project",
       childProps: {
-        link1: "https://alitube-clone.netlify.app/",
-        link2: "https://github.com/AliSaleemHasan/youtube-clone",
+        name: "AliFlix",
+        link1: "https://aliflix-clone.netlify.app/",
+        link2: "https://github.com/AliSaleemHasan/nerflix-Clone",
       },
     },
   },
