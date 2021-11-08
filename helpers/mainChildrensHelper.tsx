@@ -20,7 +20,7 @@ const childrenHelper = (
         )}
       </Grid>
     );
-  else if (name === "art") return <ArtBlock />;
+  else if (name === "art") return <ArtBlock properties={properties} />;
   else return <ContactForm />;
 };
 

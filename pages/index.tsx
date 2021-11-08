@@ -30,7 +30,8 @@ const Home: NextPage<PageProps> = ({ pageInfo }) => {
             RightSection={childrenHelper(
               info.right.name,
               info.right.properties,
-              info.right.childName
+              info.right.childName,
+              info.right.childProps
             )}
           />
         );

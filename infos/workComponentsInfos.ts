@@ -1,5 +1,5 @@
 import { mainInfos } from "../types/info";
-
+import artInfos from "infos/BlockInfo";
 const infos: mainInfos = [
   {
     info: {
@@ -19,7 +19,9 @@ const infos: mainInfos = [
     },
     right: {
       name: "art",
-      properties: {},
+      properties: {
+        artInfo: artInfos,
+      },
       childName: "",
     },
   },

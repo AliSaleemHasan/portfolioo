@@ -1,10 +1,10 @@
 import { FC, useRef } from "react";
 import { motion } from "framer-motion";
 import SemiBlock from "./SemiBlock";
-import blockInfo from "infos/BlockInfo";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
 import { artBlockVariants } from "animationVariants/artBlockVariants";
-const ArtBlock: FC = () => {
+import { ArtblockProps } from "types/artBlock";
+const ArtBlock: FC<ArtblockProps> = ({ properties }) => {
   const ref = useRef<HTMLDivElement>(null);
   const entry = useIntersectionObserver(ref, {});
 
@@ -25,7 +25,7 @@ const ArtBlock: FC = () => {
         overflow: "hidden",
       }}
     >
-      {blockInfo.map((block, index) => (
+      {properties?.artInfo.map((block, index) => (
         <div
           key={index}
           style={{

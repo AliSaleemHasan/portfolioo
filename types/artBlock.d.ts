@@ -1,5 +1,11 @@
 //art block types
+import { artBlockInfos } from "types/info";
 
+export interface ArtblockProps {
+  properties: {
+    artInfo: artBlockInfos;
+  };
+}
 export interface QuarterBlockProps {
   direction: string;
   styles: styles;
