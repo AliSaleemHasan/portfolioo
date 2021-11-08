@@ -41,13 +41,65 @@ const infos: mainInfos = [
     right: {
       name: "grid",
       properties: {
-        direction: "row",
+        direction: "column-reverse",
         quadContainer: false,
       },
       childName: "project",
       childProps: {
         link1: "https://cchaty-app.herokuapp.com",
         link2: "https://github.com/AliSaleemHasan/lettalk",
+      },
+    },
+  },
+  {
+    info: {
+      hasButton: false,
+      buttonText: "",
+      textInfo: [
+        {
+          class: "subTitle gray",
+          text: "AliTube is youtube clone , it was one of my erly projects .. I learned a lot from it about using apis with react js , you can search and view youtube videos with it ",
+        },
+      ],
+      hasImage: true,
+      imageInfo: { name: "youtuble clone", source: "/images/alitube.png" },
+    },
+    right: {
+      name: "grid",
+      properties: {
+        direction: "row",
+        quadContainer: false,
+      },
+      childName: "project",
+      childProps: {
+        link1: "https://alitube-clone.netlify.app/",
+        link2: "https://github.com/AliSaleemHasan/youtube-clone",
+      },
+    },
+  },
+  {
+    info: {
+      hasButton: false,
+      buttonText: "",
+      textInfo: [
+        {
+          class: "subTitle gray",
+          text: "AliFlix a netflix clone , with dbmovies api and react js i build this clone just to improve my frontend skills ",
+        },
+      ],
+      hasImage: true,
+      imageInfo: { name: "netflix clone", source: "/images/aliFlex.png" },
+    },
+    right: {
+      name: "grid",
+      properties: {
+        direction: "column-reverse",
+        quadContainer: false,
+      },
+      childName: "project",
+      childProps: {
+        link1: "https://alitube-clone.netlify.app/",
+        link2: "https://github.com/AliSaleemHasan/youtube-clone",
       },
     },
   },

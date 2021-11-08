@@ -28,6 +28,7 @@ const Work: NextPage<PageProps> = ({ pageInfo }) => {
                 buttonText={info.info.buttonText}
                 textInfo={info.info.textInfo}
                 hasImage={info.info.hasImage}
+                imageInfo={info.info.imageInfo}
               />
             }
             RightSection={childrenHelper(

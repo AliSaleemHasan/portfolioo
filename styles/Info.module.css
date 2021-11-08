@@ -17,7 +17,6 @@
   width: 15%;
   min-width: 125px;
   min-height: 75px;
-  height: 20%;
 }
 @media only screen and (max-width: 1000px) {
   .info {

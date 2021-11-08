@@ -52,7 +52,7 @@ const Info: React.FC<InfoProps> = ({
               alt={imageInfo.name}
               src={imageInfo?.source}
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
             />
           </div>
         )}
