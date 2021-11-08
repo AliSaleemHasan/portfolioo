@@ -4,42 +4,10 @@ import classes from "../../../../styles/Nav.module.css";
 import ContactForm from "../../../utils/ContactForm";
 import { useRouter } from "next/router";
 import { NavProps } from "../../../../types/layout";
-const navVariants = {
-  hidden: {
-    x: "100vw",
-    transition: {
-      duration: 1,
-    },
-  },
-  visible: {
-    x: -5,
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-    },
-  },
-};
-
-let contactVariant = {
-  close: {
-    translateY: 0,
-    height: "25%",
-    backgroundColor: "initial",
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-    },
-  },
-  open: {
-    height: "100%",
-    translateY: "-75%",
-    backgroundColor: "var(--primary)",
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-    },
-  },
-};
+import {
+  navVariants,
+  contactVariant,
+} from "../../../../animationVariants/layoutVariants";
 
 const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
   const router = useRouter();

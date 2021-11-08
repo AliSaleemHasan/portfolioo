@@ -3,23 +3,11 @@ import Github from "../icons/Github";
 import Gmail from "../icons/Gmail";
 import LinkedIn from "../icons/LinkedIn";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { textVariants } from "../../animationVariants/layoutVariants";
 const Footer: React.FC = () => {
   const [text, setText] = useState<string>("");
 
-  let textVariants = {
-    hidden: {
-      y: "200%",
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
   return (
     <div className={classes.footer}>
       <div className={classes.footer__icons}>

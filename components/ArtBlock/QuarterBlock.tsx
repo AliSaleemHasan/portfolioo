@@ -1,31 +1,7 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
-interface QuarterBlockProps {
-  direction: string;
-  styles: styles;
-}
-interface styles {
-  color: string;
-  radius: string;
-  display?: string;
-}
-
-let quarterBlockVariants = {
-  hidden: {
-    opacity: 0,
-    transition: {
-      duration: 2,
-    },
-  },
-  visible: {
-    opacity: 1,
-    scale: [1, 0.4, 1.1, 1],
-    transition: {
-      duration: 1.5,
-      ease: "easeOut",
-    },
-  },
-};
+import { QuarterBlockProps } from "../../types/artBlock";
+import { quarterBlockVariants } from "../../animationVariants/artBlockVariants";
 
 const QuarterBlock: FC<QuarterBlockProps> = ({ direction, styles }) => {
   return (
