@@ -3,6 +3,7 @@ export interface ButtonProps {
   style: Object;
   url?: any;
   external?: boolean;
+  onClick?: MouseEventHandler<HTMLDivElement> | undefined;
 }
 
 export interface InfoProps {

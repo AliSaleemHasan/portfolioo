@@ -1,16 +1,21 @@
 import { motion } from "framer-motion";
 import { ButtonProps } from "../../types/utils";
 import Link from "next/link";
-import { useEffect } from "react";
 let buttonVariants = {
   hover: {
     scale: 1.05,
   },
 };
 
-const Button: React.FC<ButtonProps> = ({ text, style, url, external }) => {
+const Button: React.FC<ButtonProps> = ({
+  text,
+  style,
+  url,
+  external,
+  onClick,
+}) => {
   return (
-    <motion.div variants={buttonVariants} whileHover="hover">
+    <motion.div onClick={onClick} variants={buttonVariants} whileHover="hover">
       {external ? (
         <a href={url} style={style} target="_blank" rel="noreferrer">
           {text}

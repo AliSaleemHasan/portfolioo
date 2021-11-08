@@ -66,7 +66,7 @@ const Info: React.FC<InfoProps> = ({
         {hasButton && buttonText && (
           <Button
             external={false}
-            url={"buttonUrl?.url"}
+            url={buttonUrl?.url}
             text={buttonText}
             style={homeButtonStyle}
           />
