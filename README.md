@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, clone this repository
 
 ```bash
-git clone https://github.com/AliSaleemHasan/portfolio
+git clone https://github.com/AliSaleemHasan/portfolioo
 ```
 
 ### edit information
