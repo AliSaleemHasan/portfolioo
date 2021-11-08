@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ButtonProps } from "../../types/utils";
+import { ButtonProps } from "types/utils";
 import Link from "next/link";
 let buttonVariants = {
   hover: {

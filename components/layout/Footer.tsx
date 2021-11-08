@@ -4,7 +4,7 @@ import Gmail from "../icons/Gmail";
 import LinkedIn from "../icons/LinkedIn";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { textVariants } from "../../animationVariants/layoutVariants";
+import { textVariants } from "animationVariants/layoutVariants";
 const Footer: React.FC = () => {
   const [text, setText] = useState<string>("");
 

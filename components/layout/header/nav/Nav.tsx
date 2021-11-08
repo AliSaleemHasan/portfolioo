@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import classes from "../../../../styles/Nav.module.css";
-import ContactForm from "../../../utils/ContactForm";
+import classes from "styles/Nav.module.css";
+import ContactForm from "components/utils/ContactForm";
 import { useRouter } from "next/router";
-import { NavProps } from "../../../../types/layout";
-import {
-  navVariants,
-  contactVariant,
-} from "../../../../animationVariants/layoutVariants";
+import { NavProps } from "types/layout";
+import { navVariants, contactVariant } from "animationVariants/layoutVariants";
 
 const Nav: React.FC<NavProps> = ({ open, setOpen }) => {
   const router = useRouter();

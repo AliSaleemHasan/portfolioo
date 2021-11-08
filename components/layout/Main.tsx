@@ -1,8 +1,8 @@
 // main section of each page
 // main component
 
-import classes from "../../styles/Main.module.css";
-import { MainProps } from "../../types/layout";
+import classes from "styles/Main.module.css";
+import { MainProps } from "types/layout";
 // main always have to section ,left and right
 // each section is component
 

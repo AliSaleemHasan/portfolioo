@@ -1,7 +1,7 @@
 import Button from "../utils/Button";
-import classes from "../../styles/ProjectButtons.module.css";
-import { projectButtonsStyle } from "../../styles/buttonStyles";
-import { projectButtonsProps } from "../../types/grid";
+import classes from "styles/ProjectButtons.module.css";
+import { projectButtonsStyle } from "styles/buttonStyles";
+import { projectButtonsProps } from "types/grid";
 const ProjectButtons: React.FC<projectButtonsProps> = ({ properties }) => {
   return (
     <div className={classes.projectButtons}>

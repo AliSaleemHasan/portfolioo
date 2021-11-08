@@ -1,8 +1,8 @@
-import Grid from "../components/Grid/Grid";
-import ContactForm from "../components/utils/ContactForm";
-import ArtBlock from "../components/ArtBlock/ArtBlock";
-import AboutCard from "../components/Grid/AboutCard";
-import ProjectButtons from "../components/Grid/ProjectButtons";
+import Grid from "components/Grid/Grid";
+import ContactForm from "components/utils/ContactForm";
+import ArtBlock from "components/ArtBlock/ArtBlock";
+import AboutCard from "components/Grid/AboutCard";
+import ProjectButtons from "components/Grid/ProjectButtons";
 
 const childrenHelper = (
   name: string,

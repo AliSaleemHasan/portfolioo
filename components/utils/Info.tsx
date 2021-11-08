@@ -1,13 +1,13 @@
 // info is every section with text (info)
 
-import classes from "../../styles/Info.module.css";
+import classes from "styles/Info.module.css";
 import Image from "next/image";
 import Button from "./Button";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { homeButtonStyle } from "../../styles/buttonStyles";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import { InfoProps } from "../../types/utils";
+import { homeButtonStyle } from "styles/buttonStyles";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
+import { InfoProps } from "types/utils";
 
 let infoVariants = {
   hidden: {

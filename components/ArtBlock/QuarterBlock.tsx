@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
-import { QuarterBlockProps } from "../../types/artBlock";
-import { quarterBlockVariants } from "../../animationVariants/artBlockVariants";
+import { QuarterBlockProps } from "types/artBlock";
+import { quarterBlockVariants } from "animationVariants/artBlockVariants";
 
 const QuarterBlock: FC<QuarterBlockProps> = ({ direction, styles }) => {
   return (

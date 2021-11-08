@@ -1,4 +1,4 @@
-import classes from "../../styles/AboutCard.module.css";
+import classes from "styles/AboutCard.module.css";
 import Image from "next/image";
 const AboutCard: React.FC = () => {
   return (

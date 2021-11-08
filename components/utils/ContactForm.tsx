@@ -1,7 +1,6 @@
-import Button from "./Button";
 import { FormEvent, useState } from "react";
-import classes from "../../styles/ContactForm.module.css";
-import { formButtonStyle } from "../../styles/buttonStyles";
+import classes from "styles/ContactForm.module.css";
+import { formButtonStyle } from "styles/buttonStyles";
 interface ContactFormProps {}
 const ContactForm: React.FC<ContactFormProps> = () => {
   const [name, setName] = useState<string>("");

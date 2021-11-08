@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import classes from "../../../../styles/NavIcon.module.css";
-import { NavProps } from "../../../../types/layout";
+import classes from "styles/NavIcon.module.css";
+import { NavProps } from "types/layout";
 import {
   navIconVariants,
   navIconLinesVariants,
-} from "../../../../animationVariants/layoutVariants";
+} from "animationVariants/layoutVariants";
 const NavIcon: React.FC<NavProps> = ({ open, setOpen }) => {
   return (
     <motion.div

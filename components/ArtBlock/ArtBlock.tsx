@@ -1,9 +1,9 @@
 import { FC, useRef } from "react";
 import { motion } from "framer-motion";
 import SemiBlock from "./SemiBlock";
-import blockInfo from "../../infos/BlockInfo";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import { artBlockVariants } from "../../animationVariants/artBlockVariants";
+import blockInfo from "infos/BlockInfo";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
+import { artBlockVariants } from "animationVariants/artBlockVariants";
 const ArtBlock: FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const entry = useIntersectionObserver(ref, {});
